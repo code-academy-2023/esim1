@@ -7,9 +7,11 @@ function addData(){
 function showResult(){
     document.getElementById("btnShow").hidden=true;
     document.getElementById("btnHide").hidden=false;
+    document.getElementById("result").hidden=false;
 }
 
 function hideResult(){
     document.getElementById("btnShow").hidden=false;
     document.getElementById("btnHide").hidden=true;
+    document.getElementById("result").hidden=true;
 }
