@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function saveData(){
+            console.log("Painiketta painettu");
+            let fname=document.getElementById("fname").value;
+            console.log(fname);
+            document.getElementById("result").innerHTML="Etunimi "+fname;
+        }
+    </script>
+    <script src="js/myfunctions.js"></script>
+</head>
+<body>
+    <h1>JavaScript esimerkkejä</h1>
+    <h2>Esimerkki 1</h2>
+    <p>
+        <label for="fname">Anna etunimesi</label>
+        <input type="text" id="fname">
+        <br>
+        <button onclick="saveData()">Tallenna</button>
+    </p>
+    <h2>Esimerkki 2</h2>
+    <p>
+        <label for="fn">Etunimi</label>
+        <input type="text" id="fn">
+        <br>
+        <label for="ln">Sukunimi</label>
+        <input type="text" id="ln">
+        <br>
+        <button onclick="addData()">Tallenna</button>
+    </p>
+    <p id="result">Tulostus tähän</p>
+    <p>
+        <button id="btnShow" onclick="showResult()" hidden >Näytä tulokset</button>
+        <button id="btnHide" onclick="hideResult()">Piilota tulokset</button>
+    </p>
+</body>
+</html>
